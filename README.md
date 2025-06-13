@@ -1,6 +1,10 @@
+# Syrup and Sugar
+
 A competitor with the Stoneworks modpack for beta 1.7.3.
 
 Goal: Exploration and magic
+
+### Mod Details
 
 https://modrinth.com/mod/elemental-arrows-stationapi
 

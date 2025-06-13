@@ -1,14 +1,11 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "net.danygames2014.template.mixin",
+  "package": "net.dairycultist.syrup_and_sugar.mixin",
   "compatibilityLevel": "JAVA_17",
-  "mixins": [
-  ],
-  "server": [
-  ],
-  "client": [
-  ],
+  "mixins": [],
+  "server": [],
+  "client": [],
   "injectors": {
     "defaultRequire": 1
   }

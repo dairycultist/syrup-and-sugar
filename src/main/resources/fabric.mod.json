@@ -1,28 +1,23 @@
 {
   "schemaVersion": 1,
-  "id": "template",
+  "id": "syrup_and_sugar",
   "version": "${version}",
 
-  "name": "Template",
-  "description": "",
-  "authors": [
-    "DanyGames2014"
-  ],
+  "name": "Syrup and Sugar",
+  "description": "A modpack!",
+  "authors": [ "dairycultist" ],
 
   "license": "MIT",
-  "icon": "assets/template/icon.png",
+  "icon": "assets/syrup_and_sugar/icon.png",
 
   "environment": "*",
   "entrypoints": {
-    "stationapi:event_bus": [
-    ],
-    "stationapi:event_bus_client": [
-    ],
-    "stationapi:event_bus_server": [
-    ]
+    "stationapi:event_bus": [],
+    "stationapi:event_bus_client": [],
+    "stationapi:event_bus_server": []
   },
   "mixins": [
-    "template.mixins.json"
+    "syrup_and_sugar.mixins.json"
   ],
 
   "depends": {
