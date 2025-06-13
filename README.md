@@ -8,6 +8,8 @@ Goal: Exploration and magic
 
 https://modrinth.com/mod/elemental-arrows-stationapi
 
+https://modrinth.com/mod/accessory-api
+
 https://modrinth.com/mod/aether-stapi
 
 - Aether is no longer its own dimension; the biomes are now part of the overworld
@@ -15,10 +17,6 @@ https://modrinth.com/mod/aether-stapi
 
 https://modrinth.com/mod/simplenetherores
 
-https://modrinth.com/mod/better-nether-beta
-
 https://modrinth.com/mod/split-woods
 
 https://modrinth.com/mod/crate
-
-https://modrinth.com/mod/accessory-api

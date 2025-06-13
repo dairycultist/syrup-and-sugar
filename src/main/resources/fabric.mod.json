@@ -4,7 +4,7 @@
   "version": "${version}",
 
   "name": "Syrup and Sugar",
-  "description": "A modpack!",
+  "description": "The linker mod for the Syrup and Sugar modpack.",
   "authors": [ "dairycultist" ],
 
   "license": "MIT",
