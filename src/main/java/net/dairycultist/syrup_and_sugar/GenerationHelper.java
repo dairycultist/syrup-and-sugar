@@ -33,19 +33,24 @@ public class GenerationHelper {
     // generate a closed maze, where xyz is bottom corner
     // TODO add capacity to make mazes have more interesting designs and more diverse room sizes (height!)
     // TODO reference dungeons here https://youtu.be/snTfoz_xyQg?t=12180
-    public static void generateMaze(World world, Random random, int x, int y, int z, int w, int h, int l, int minRoomEdge, int minRoomHeight, SubGenerator roomBuilder) {
+    public static void generateMaze2D(World world, Random random, int x, int y, int z, int w, int h, int l, int minRoomWL, SubGenerator roomBuilder) {
+
+        class Room {
+
+            int w, l;
+            boolean northDoor, eastDoor, southDoor, westDoor; // if true, the wall contains a door
+        }
 
         // uses a modified recursive division method https://en.wikipedia.org/wiki/Maze_generation_algorithm#Recursive_division_method
 
-        // define a space as a 3D size + 6 booleans (one representing whether each wall/floor/ceiling has a door or not)
-
-        // 1. create a space, and add it to a queue
+        // 1. create a Room the size of the whole maze, and add it to a queue
         // 2. while the queue is not empty:
-        //    - remove the next space in the queue
-        //    - if the room cannot be split because it is too small, continue
-        //    - otherwise, create two new spaces as random halves of the space, assigning a door to the relevant
-        //      wall/floor/ceiling for either, and, for any doors that existed in the previous room, give it to one
-        //      of the new rooms randomly
+        //    - remove the next Room in the queue
+        //    - if the Room cannot be split because it is too small, add it to a 'finished' list
+        //    - otherwise, create two new Rooms as random halves of the Room, assigning a door to the relevant
+        //      wall for either, and, for any(ish) doors that existed in the previous room (it depends on the
+        //      direction of the split), give it to one of the new rooms randomly, and then add both to the queue
+        // 3. pass all Rooms to the roomBuilder
     }
 
     public static void replaceRect(World world, int fromId, int toId, int x, int y, int z, int w, int h, int l) {
