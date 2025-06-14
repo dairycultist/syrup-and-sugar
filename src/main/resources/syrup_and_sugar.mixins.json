@@ -3,7 +3,9 @@
   "minVersion": "0.8",
   "package": "net.dairycultist.syrup_and_sugar.mixin",
   "compatibilityLevel": "JAVA_17",
-  "mixins": [],
+  "mixins": [
+    "MBiome"
+  ],
   "server": [],
   "client": [],
   "injectors": {
