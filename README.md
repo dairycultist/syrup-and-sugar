@@ -2,7 +2,7 @@
 
 A competitor with the Stoneworks modpack for beta 1.7.3.
 
-Goal: Exploration and magic
+Adds: Exploration and overpowered magic.
 
 ### Mod Details
 
@@ -20,3 +20,5 @@ https://modrinth.com/mod/simplenetherores
 https://modrinth.com/mod/split-woods
 
 https://modrinth.com/mod/crate
+
+https://modrinth.com/mod/copper-and-caverns
