@@ -6,6 +6,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 public class GenerationHelper {
@@ -31,26 +32,35 @@ public class GenerationHelper {
     }
 
     // generate a closed maze, where xyz is bottom corner
-    // TODO add capacity to make mazes have more interesting designs and more diverse room sizes (height!)
-    // TODO reference dungeons here https://youtu.be/snTfoz_xyQg?t=12180
-    public static void generateMaze2D(World world, Random random, int x, int y, int z, int w, int h, int l, int minRoomWL, SubGenerator roomBuilder) {
+    // TODO reference dungeon design here https://youtu.be/snTfoz_xyQg?t=12180
+    public static void generateMaze2D(World world, Random random, int x, int y, int z,
+                                      int celSize, int celsWide, int celsLong,
+                                      SubGenerator roomBuilder, SubGenerator doorBuilder) {
 
         class Room {
 
-            int w, l;
-            boolean northDoor, eastDoor, southDoor, westDoor; // if true, the wall contains a door
+            int celX, celZ, celsWide, celsLong;
+            ArrayList<Room> adjacent;
         }
 
-        // uses a modified recursive division method https://en.wikipedia.org/wiki/Maze_generation_algorithm#Recursive_division_method
+        class Door {
 
-        // 1. create a Room the size of the whole maze, and add it to a queue
-        // 2. while the queue is not empty:
-        //    - remove the next Room in the queue
-        //    - if the Room cannot be split because it is too small, add it to a 'finished' list
-        //    - otherwise, create two new Rooms as random halves of the Room, assigning a door to the relevant
-        //      wall for either, and, for any(ish) doors that existed in the previous room (it depends on the
-        //      direction of the split), give it to one of the new rooms randomly, and then add both to the queue
+            Room room1, room2;
+            int celX1, celZ1, celX2, celZ2;
+        }
+
+        // uses a modified recursive division method to allow for diverse room sizes
+        // https://en.wikipedia.org/wiki/Maze_generation_algorithm#Recursive_division_method
+
+        // 1. create a Room the size of the whole maze
+        // 2. recursively split it into rooms (randomly breaking to allow for some larger rooms)
         // 3. pass all Rooms to the roomBuilder
+
+        // 4. find all Rooms adjacent to every Room
+        // 5. construct a spanning tree, populating a list of Doors
+        // 6. add a few more doors randomly (to make it easier to traverse)
+        // 7. determine the cel placement of each door based on the rooms it connects
+        // 8. pass all Doors to the doorBuilder
     }
 
     public static void replaceRect(World world, int fromId, int toId, int x, int y, int z, int w, int h, int l) {
