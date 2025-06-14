@@ -22,3 +22,6 @@ https://modrinth.com/mod/split-woods
 https://modrinth.com/mod/crate
 
 https://modrinth.com/mod/copper-and-caverns
+
+Will use my [StAPI Structure Utility](https://github.com/dairycultist/StAPI-Structure-Utility/) mod when I get around
+to actually implementing it.
