@@ -10,7 +10,8 @@ I'm going to stay away from adding structures (for the time being), instead addi
 use my [StAPI Structure Utility](https://github.com/dairycultist/StAPI-Structure-Utility/) mod when I get around to
 actually implementing it.
 
-Aether-like materials (which generate in biomes in the overworld) are used for magical weapons/accessories
+Unique(ish) magical overworld and nether biomes that are the exclusive source of new materials used to make magical
+weapons/accessories (lots of inspiration taken from the Aether).
 
 ### Mod Details
 
