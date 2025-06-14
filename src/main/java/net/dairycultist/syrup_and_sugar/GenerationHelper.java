@@ -6,9 +6,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-import java.util.ArrayList;
 import java.util.Random;
-import java.util.Stack;
 
 public class GenerationHelper {
 
@@ -35,12 +33,19 @@ public class GenerationHelper {
     // generate a closed maze, where xyz is bottom corner
     // TODO add capacity to make mazes have more interesting designs and more diverse room sizes (height!)
     // TODO reference dungeons here https://youtu.be/snTfoz_xyQg?t=12180
-    public static void generateMaze(World world, Random random, int x, int y, int z, int roomW, int roomH, int roomL, int xCels, int zCels, int wallBlockId, SubGenerator roomBuilder) {
+    public static void generateMaze(World world, Random random, int x, int y, int z, int w, int h, int l, int minRoomEdge, int minRoomHeight, SubGenerator roomBuilder) {
 
-        // 1. take the region
-        // 2. subdivide it into unequally sized rooms
-        // 3. derive an MST
-        // 4. pass that data to the room builder
+        // uses a modified recursive division method https://en.wikipedia.org/wiki/Maze_generation_algorithm#Recursive_division_method
+
+        // define a space as a 3D size + 6 booleans (one representing whether each wall/floor/ceiling has a door or not)
+
+        // 1. create a space, and add it to a queue
+        // 2. while the queue is not empty:
+        //    - remove the next space in the queue
+        //    - if the room cannot be split because it is too small, continue
+        //    - otherwise, create two new spaces as random halves of the space, assigning a door to the relevant
+        //      wall/floor/ceiling for either, and, for any doors that existed in the previous room, give it to one
+        //      of the new rooms randomly
     }
 
     public static void replaceRect(World world, int fromId, int toId, int x, int y, int z, int w, int h, int l) {
