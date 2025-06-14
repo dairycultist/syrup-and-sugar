@@ -2,7 +2,7 @@
 
 A competitor with the Stoneworks modpack for beta 1.7.3.
 
-Adds: Exploration and overpowered magic.
+Adds: Exploration, improved progression, and overpowered magic.
 
 ### Mod Details
 
