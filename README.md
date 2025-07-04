@@ -1,10 +1,13 @@
-# Syrup and Sugar
+# Dairycraft
 
-A competitor with the Stoneworks modpack for beta 1.7.3.
-
-Adds: Exploration, improved progression, and overpowered magic.
+A competitor with the Stoneworks modpack for beta 1.7.3, adding exploration, improved progression, and the mods I've
+made that I Particularly Like.
 
 ### Roadmap
+
+pink healing crystal... pendant... accessory that gives you passive regen (stacks)
+
+retexture chests to be darker and have an iron border (very cool looking for dungeons)
 
 I'm going to stay away from adding structures (for the time being), instead adding cool biomes/terrain generation. Will
 use my [StAPI Structure Utility](https://github.com/dairycultist/StAPI-Structure-Utility/) mod when I get around to

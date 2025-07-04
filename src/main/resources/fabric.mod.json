@@ -1,23 +1,25 @@
 {
   "schemaVersion": 1,
-  "id": "syrup_and_sugar",
+  "id": "dairycraft",
   "version": "${version}",
 
-  "name": "Syrup and Sugar",
-  "description": "The linker mod for the Syrup and Sugar modpack.",
+  "name": "Dairycraft",
+  "description": "The linker mod for the Dairycraft modpack.",
   "authors": [ "dairycultist" ],
 
   "license": "MIT",
-  "icon": "assets/syrup_and_sugar/icon.png",
+  "icon": "assets/dairycraft/icon.png",
 
   "environment": "*",
   "entrypoints": {
-    "stationapi:event_bus": [ "net.dairycultist.syrup_and_sugar.SyrupAndSugar" ],
+    "stationapi:event_bus": [
+      "net.dairycultist.dairycraft.Dairycraft"
+    ],
     "stationapi:event_bus_client": [],
     "stationapi:event_bus_server": []
   },
   "mixins": [
-    "syrup_and_sugar.mixins.json"
+    "dairycraft.mixins.json"
   ],
 
   "depends": {

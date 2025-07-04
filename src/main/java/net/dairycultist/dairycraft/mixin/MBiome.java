@@ -1,4 +1,4 @@
-package net.dairycultist.syrup_and_sugar.mixin;
+package net.dairycultist.dairycraft.mixin;
 
 import net.minecraft.world.biome.Biome;
 import org.spongepowered.asm.mixin.Mixin;

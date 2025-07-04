@@ -1,4 +1,4 @@
-package net.dairycultist.syrup_and_sugar.accessories;
+package net.dairycultist.dairycraft.accessories;
 
 import com.matthewperiut.accessoryapi.api.Accessory;
 import net.minecraft.entity.player.PlayerEntity;
