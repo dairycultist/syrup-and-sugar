@@ -5,6 +5,16 @@ made that I Particularly Like.
 
 ### Roadmap
 
+insanely hard RLCraft-inspired mod with an end goal and stuff
+BUT it maintains the Minecraft aesthetic
+
+accessories, copper and caverns, other magic stuff
+
+change the food system so it heals over time instead of all at once
+and change progression like making it harder to mine wood and stuff
+
+add shields which u put in an accessory slot
+
 pink healing crystal... pendant... accessory that gives you passive regen (stacks)
 
 retexture chests to be darker and have an iron border (very cool looking for dungeons)
@@ -14,7 +24,7 @@ use my [StAPI Structure Utility](https://github.com/dairycultist/StAPI-Structure
 actually implementing it.
 
 Unique(ish) magical overworld and nether biomes that are the exclusive source of new materials used to make magical
-weapons/accessories (lots of inspiration taken from the Aether).
+weapons/accessories (lots of inspiration taken from the Aether), but also filled with new dangerous mobs.
 
 ### Mod Details
 

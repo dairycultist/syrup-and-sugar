@@ -137,6 +137,8 @@ dependencies {
     modImplementation("maven.modrinth:copper-and-caverns:2.0-fabric,b1.7.3") { transitive false }
 
     modImplementation("maven.modrinth:inventorytweaks:2.5.1-fabric,b1.7.3") { transitive false }
+
+    modImplementation("maven.modrinth:hardcore-mod:1.0.1-babric-babric,b1.7.3") { transitive false }
 }
 
 processResources {
