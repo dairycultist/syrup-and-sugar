@@ -3,6 +3,7 @@ package net.dairycultist.dairycraft;
 import com.matthewperiut.accessoryapi.AccessoryAPI;
 import com.matthewperiut.accessoryapi.api.AccessoryRegister;
 import net.dairycultist.dairycraft.accessories.TestAccessory;
+import net.fabricmc.api.ModInitializer;
 import net.mine_diver.unsafeevents.listener.EventListener;
 import net.minecraft.item.Item;
 import net.modificationstation.stationapi.api.event.registry.ItemRegistryEvent;
@@ -10,7 +11,7 @@ import net.modificationstation.stationapi.api.mod.entrypoint.Entrypoint;
 import net.modificationstation.stationapi.api.util.Namespace;
 import net.modificationstation.stationapi.api.util.Null;
 
-public class Dairycraft {
+public class Dairycraft implements ModInitializer {
 
     @Entrypoint.Namespace
     public static Namespace NAMESPACE = Null.get();
@@ -23,8 +24,18 @@ public class Dairycraft {
         AccessoryAPI.config.aetherStyleArmor = false;
         AccessoryRegister.add("ring");
         AccessoryRegister.add("ring");
+        AccessoryRegister.add("ring");
+        AccessoryRegister.add("shield");
 
         TEST_ACCESSORY = new TestAccessory(NAMESPACE.id("test_accessory"))
                 .setTranslationKey(NAMESPACE, "test_accessory");
+    }
+
+    public void onInitialize() {
+
+        System.out.println("Initializing Dairycraft");
+//        if (FabricLoader.getInstance().isModLoaded("retrocommands")) {
+//
+//            CommandRegistry.add(new Command() {
     }
 }

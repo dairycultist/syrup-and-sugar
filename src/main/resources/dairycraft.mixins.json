@@ -7,7 +7,9 @@
     "MBiome"
   ],
   "server": [],
-  "client": [],
+  "client": [
+    "MCreateWorldScreen"
+  ],
   "injectors": {
     "defaultRequire": 1
   }
