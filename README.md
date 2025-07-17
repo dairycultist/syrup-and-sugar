@@ -1,12 +1,22 @@
 # Dairycraft
 
-A competitor with the Stoneworks modpack for beta 1.7.3, adding exploration, improved progression, and the mods I've
-made that I Particularly Like.
+A competitor with the _Stoneworks_ modpack for beta 1.7.3, _Dairycraft_ is insanely hard RLCraft-inspired mod with
+added exploration, improved progression, an end goal, but without taking away from Minecraft's core aesthetic.
 
-### Roadmap
+## Pack-exclusive content
 
-insanely hard RLCraft-inspired mod with an end goal and stuff
-BUT it maintains the Minecraft aesthetic
+light-fantasy
+
+no data I'll just steal code from Telvarost to give stuff textures and whatnot
+
+adds the mods I've made that I Particularly Like.
+
+worldgen should be built around slow walkspeed, thus dense
+
+add cool mystical biomes/terrain generation
+
+Unique(ish) magical overworld and nether biomes that are the exclusive source of new materials used to make magical
+weapons/accessories (lots of inspiration taken from the Aether), but also filled with new dangerous mobs.
 
 accessories, copper and caverns, other magic stuff
 
@@ -19,14 +29,11 @@ pink healing crystal... pendant... accessory that gives you passive regen (stack
 
 retexture chests to be darker and have an iron border (very cool looking for dungeons)
 
-I'm going to stay away from adding structures (for the time being), instead adding cool biomes/terrain generation. Will
-use my [StAPI Structure Utility](https://github.com/dairycultist/StAPI-Structure-Utility/) mod when I get around to
-actually implementing it.
+small, non-modular structures (for the time being)
 
-Unique(ish) magical overworld and nether biomes that are the exclusive source of new materials used to make magical
-weapons/accessories (lots of inspiration taken from the Aether), but also filled with new dangerous mobs.
+might use my [StAPI Structure Utility](https://github.com/dairycultist/StAPI-Structure-Utility/) mod if/when I get around to actually implementing it.
 
-### Mod Details
+## Included Mods
 
 https://modrinth.com/mod/elemental-arrows-stationapi
 

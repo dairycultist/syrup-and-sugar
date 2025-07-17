@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin({CreateWorldScreen.class})
 public class MCreateWorldScreen extends Screen {
 
-    @Inject(method = {"render"}, at = {@At("TAIL")})
+    @Inject(method = {"render"}, at = {@At("HEAD")})
     private void init(CallbackInfo info) {
 
         int centerX = this.width / 2;
