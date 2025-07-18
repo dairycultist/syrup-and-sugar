@@ -4,7 +4,8 @@
   "package": "net.dairycultist.dairycraft.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "MBiome"
+    "MBiome",
+    "MPlayerEntity"
   ],
   "server": [],
   "client": [

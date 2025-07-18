@@ -17,7 +17,9 @@
     ],
     "stationapi:event_bus_client": [],
     "stationapi:event_bus_server": [],
-    "main": [ "net.dairycultist.dairycraft.Dairycraft" ]
+    "main": [
+      "net.dairycultist.dairycraft.Dairycraft"
+    ]
   },
   "mixins": [
     "dairycraft.mixins.json"
