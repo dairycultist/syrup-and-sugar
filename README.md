@@ -5,6 +5,10 @@ added exploration, improved progression, an end goal, but without taking away fr
 
 ## Pack-exclusive content
 
+- Eating food will "cache" the amount you're going to heal and then apply it over time, instead of healing instantly
+
+### Unimplemented
+
 light-fantasy
 
 no data I'll just steal code from Telvarost to give stuff textures and whatnot
@@ -18,9 +22,8 @@ add cool mystical biomes/terrain generation
 Unique(ish) magical overworld and nether biomes that are the exclusive source of new materials used to make magical
 weapons/accessories (lots of inspiration taken from the Aether), but also filled with new dangerous mobs.
 
-accessories, copper and caverns, other magic stuff
+other magic stuff
 
-change the food system so it heals over time instead of all at once
 and change progression like making it harder to mine wood and stuff
 
 add shields which u put in an accessory slot
@@ -48,3 +51,5 @@ https://modrinth.com/mod/crate
 https://modrinth.com/mod/copper-and-caverns
 
 https://modrinth.com/mod/inventorytweaks
+
+https://modrinth.com/mod/hardcore-mod

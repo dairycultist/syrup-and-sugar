@@ -2,7 +2,9 @@ package net.dairycultist.dairycraft;
 
 import com.matthewperiut.accessoryapi.AccessoryAPI;
 import com.matthewperiut.accessoryapi.api.AccessoryRegister;
-import net.dairycultist.dairycraft.accessories.TestAccessory;
+import net.dairycultist.dairycraft.accessory.TestAccessory;
+import net.dairycultist.dairycraft.structure.ShackStructure;
+import net.dairycultist.dairycraft.structure.Structure;
 import net.fabricmc.api.ModInitializer;
 import net.mine_diver.unsafeevents.listener.EventListener;
 import net.minecraft.item.Item;
@@ -40,8 +42,16 @@ public class Dairycraft implements ModInitializer {
 //            CommandRegistry.add(new Command() {
     }
 
+    private static final Structure[] structures = {
+            new ShackStructure()
+    };
+
     @EventListener
     public void decorate(WorldGenEvent.ChunkDecoration event) {
-//        event.world, event.worldSource, event.x, event.z, event.random
+
+        // place structures, ensuring no two structures are placed in the same chunk
+        for (Structure structure : structures)
+            if (structure.attemptToPlace(event.world, event.biome, event.random, event.x + event.random.nextInt(16), event.z + event.random.nextInt(16)))
+                break;
     }
 }
